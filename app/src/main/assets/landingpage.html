@@ -1,0 +1,193 @@
+<!DOCType HTML>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/landingpage.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <script type="text/javascript" src="scripts/landingpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/chat_interface.css">
+    <link rel="stylesheet" type="text/css" href="css/temporary.css">
+
+</head>
+<body>
+
+
+<div class="col-xs-12 topnav" style="padding:10px">
+    <div class="col-xs-1" ></div>
+    <div class="col-xs-9"></div>
+    <div class="col-xs-1" onclick="launchNextPage('login')"><i class="fas fa-power-off" style="font-size:25px"></i></div>
+</div>
+
+
+<div class="container offers offers-container">
+    <div class="row" style="padding:0px">
+        <!--<div class="col-xs-12" style="padding:0px">
+
+        </div>-->
+
+        <!--<div class="item">
+            <img src="images/dbslogo1.png" alt="Avatar" width="100%" height="100%">
+        </div>-->
+        <div class="col-xs-12" style="width:100% ; padding:0px">
+            <div id="myCarousel" class="carousel " style="padding:0px">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" style="padding:0px" id="dealsnoffers">
+
+
+                    <div class="item">
+                        <div class="" style="width:100%;height: 100px">
+                            <div class="">
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-10" style="margin-top: 35px;" id="offer2">
+                                    Jet Airways offers1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item active">
+                        <div class="" style="width:100%;height: 100px">
+                            <div class="">
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-10" style="margin-top: 35px;" id="offer1">
+                                    Jet Airways offers2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-content" id="main">
+    <!--<div class="header overflow-hidden">
+        <div class="hamburger-container font-size-3em col-xs-1" onclick="openNav()">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="notification-container font-size-3em col-xs-11">
+            <span>Just for testing</span>
+        </div>
+    </div>-->
+    <div class="chat-container" id="chat-container-div" style="display:none">
+        <div class="container col-xs-12 chat-inner-container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="chat_window">
+                            <ul class="messages"></ul>
+                            <div class="bottom_wrapper clearfix">
+                                <div class="message_input_wrapper">
+                                    <input id="msg_input" class="message_input" placeholder="Say Hi to begin chat..."/>
+                                </div>
+                                <div class="send_message">
+                                    <div class="text">send</div>
+                                </div>
+                            </div>
+                            <div class="close-button-container">
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-10">
+                                    <button onclick="closeChatBox()" style="margin-top:10px;margin-bottom:10px" class="col-xs-12 btn-large btn btn-danger">
+                                        Close
+                                    </button>
+                                </div>
+                                <div class="col-xs-1"></div>
+                            </div>
+                        </div>
+                        <div class="message_template">
+                            <li class="message">
+                                <div class="avatar"></div>
+                                <div class="text_wrapper">
+                                    <div class="text"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mic-content overflow-hidden" id="mic-content">
+        <div class="col-xs-3">
+
+        </div>
+        <div class="col-xs-8">
+            <div class="mic-content-circle-area" onclick="showChatBox()">
+                <div class="circle-area" id="circle-red">
+                    <div class="mic-container">
+						<span class="">
+							<!--<span class="fas fa-microphone"></span>-->
+                            <img src="./images/comments.png" class="chat-image"/>
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1">
+
+        </div>
+    </div>
+
+    <div class="col-xs-12 ">
+        <div class="col-xs-12 ">
+            <h4>Welcome, Prateek</h4>
+            <h4 >Account Number : <a >312877 55558</a></h4>
+            <h1 onclick="loadAllOptions()" style="text-align:center;border:1px solid;border-radius:10000px;border-color:#d9534f">
+                <a style="color: #d9534f;">₹88,667
+                </a>
+            </h1>
+
+            <div class="arrow bounce">
+
+            </div>
+        </div>
+        <div class="account-selection-div">
+
+        </div>
+
+    </div>
+
+    <div class="footer"  id="mainFooter"  style="display:none">
+        <div class="footer-content overflow-hidden" >
+            <div class="footer-item-1 col-xs-3 footer-menu" id="footerItem1" style="border:none;display:none">
+
+                <!--<img src="./images/money_transfer.png" class="footer-item" id="image1"/>-->
+            </div>
+            <div class="footer-item-2 col-xs-3 footer-menu" id="footerItem2"  style="border:none;display:none">
+                <!--<img src="./images/money_transfer.png" class="footer-item" id="image2"/>-->
+
+            </div>
+            <div class="footer-item-3 col-xs-3 footer-menu" id="footerItem3"  style="border:none;display:none">
+                <!--<img src="./images/money_transfer.png" class="footer-item" id="image3"/>-->
+
+            </div>
+            <div class="footer-ellipsis col-xs-3 footer-menu" id="footerItem4"  style="border:none;display:none">
+                <!--<img src="./images/elipses.png" class="footer-item" id="image4"/>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script defer src="./scripts/fontawesome.js"></script>
+<script defer src="./scripts/jquery.min.js"></script>
+<script defer src="./scripts/bootstrap.js"></script>
+<!--<script defer src="./scripts/landingpage.js"></script>-->
+<script defer src="./scripts/common.js"></script>
+<script src="./scripts/login.js"></script>
+<script src="./scripts/bind.js"></script>
+</body>

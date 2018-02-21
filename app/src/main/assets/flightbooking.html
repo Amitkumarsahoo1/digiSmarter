@@ -1,0 +1,94 @@
+<!DOCType HTML>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/fightbooking.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <script src="./scripts/flightbooking.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+</head>
+<body>
+
+<div class="col-xs-12 topnav" style="padding:10px">
+    <div class="col-xs-1" onclick="launchNextPage('landingpage')"><i class="fas fa-home" style="font-size:25px"></i></div>
+    <div class="col-xs-9"></div>
+    <div class="col-xs-1" onclick="launchNextPage('login')"><i class="fas fa-power-off" style="font-size:25px"></i></div>
+</div>
+
+<div>
+
+    <div class="container">
+        <div class="row" style="padding:0px">
+            <!--<div class="col-xs-12" style="padding:0px">
+                <img src="images/dbslogo1.png" alt="Avatar" width="100%" height="100%">
+            </div>-->
+            <div class="col-xs-12" style="margin-left:15px">
+                <div id="logbox">
+
+                        <h2 style="text-align:center;color: #d9534f;">
+                            Flight Booking
+                        </h2>
+                        <input id="source" type="text" placeholder="Source" value="Hyderabad"
+                               minlength="3" autofocus="autofocus" required="required"
+                               class="input pass"/>
+                        <input id="destination" type="text" placeholder="Destination" value="Goa"
+                               autofocus="autofocus" required="required"
+                               class="input pass"/>
+
+                        <input id="dayofjourney" type="number" placeholder="date" value="23"
+                               autofocus="autofocus" required="required"
+                               class="input pass"/>
+                        <div class="form-group expense-type" style="display:block" onclick="showAccNumberInput()">
+                            <select class="form-control" id="monthofjourney">
+                                <option>January</option>
+                                <option>Feburary</option>
+                                <option selected>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </div>
+                        <div class="form-group expense-type" style="display:block" onclick="showAccNumberInput()">
+                            <select class="form-control" id="yearofjourney">
+                                <option selected>2018</option>
+                                <option>2019</option>
+                            </select>
+                        </div>
+
+                        <button onclick="getFlightBookingList()" style="margin-top:10px;margin-bottom:10px" class="col-xs-offset-4 btn-large btn btn-danger">
+                            Search
+                        </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div>
+    <div class="container">
+        <div class="row" style="padding:0px">
+            <div class="col-xs-12">
+
+                <div class="col-xs-12" style="width:100%" id="airlineresult">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script  src="./scripts/fontawesome.js"></script>
+<script  src="./scripts/jquery.min.js"></script>
+<script  src="./scripts/bootstrap.js"></script>
+<script  src="./scripts/common.js"></script>
+</body>

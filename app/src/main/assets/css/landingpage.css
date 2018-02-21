@@ -1,0 +1,139 @@
+.font-size-3em {
+	font-size: 3em;
+}
+
+.float-left {
+	float: left;
+}
+
+.circle-area {
+
+}
+
+.notification-container {
+	font-size: 20px;
+    color: white;
+    margin-left: 80px;
+}
+
+#circle-red {
+    width: 150px;
+    height: 150px;
+    background: #EB302E;
+    -moz-border-radius: 6em;
+    -webkit-border-radius: 6em;
+    border-radius: 147px;
+    opacity: 0.9;
+}
+#circle-yellow {
+    width: 170px;
+    height: 170px;
+    background: #FBB731;
+    -moz-border-radius: 6em;
+    -webkit-border-radius: 6em;
+    border-radius: 6em;
+    opacity: 0.9;
+}
+
+.mic-container {
+    text-align: center;
+}
+
+.header {
+	padding-top: 1em;
+}
+
+.account-balance-and-stuff {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.chat-image {
+    height: 90px;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+
+
+.font-size-30 {
+    font-size:30px !important;
+}
+
+.account-selection-button {
+
+}
+
+.account-selection-dropdown-area {
+    font-size: 15px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d9534f;
+
+    color: white;
+    text-align: center;
+    height: 72px;
+}
+
+.offers-notification-container {
+   font-size: 10px;
+   padding-top: 20px;
+}
+
+.notification-area {
+     background-color: rgba(251,183,49,0.6);
+}
+
+.close-notification {
+    width: 50px;
+    height: 50px;
+    background: #EB302E;
+    -moz-border-radius: 6em;
+    -webkit-border-radius: 6em;
+    border-radius: 6em;
+    opacity: 0.9;
+    float: right;
+    margin-top: -80px;
+}
+
+.close-notificatoin-span{
+    margin-left: 12px;
+}
+
+.footer-item {
+    width: 5em;
+    height: 5em;
+
+}
+
+.footer-menu {
+    border: black 1px solid;
+}
+.offers {
+    font-size: 20px;
+}
+
+.account-detail {
+    color:blue;
+}
+
+.mic-content {
+    margin-bottom:10px;
+}
+
+.chat-inner-container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.offers-container{
+    background-color: #FBB731;
+}

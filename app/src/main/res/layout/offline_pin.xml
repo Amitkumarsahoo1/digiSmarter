@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="27dp"
+            android:text="Enter Offline PIN"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/otpNumberOffline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="31dp"
+            android:ems="10"
+            android:textColor="#d9534f"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/OkayOfflineOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/otpNumberOffline"
+            android:layout_below="@+id/otpNumberOffline"
+            android:layout_marginTop="23dp"
+            android:text="Okay"
+            android:textColor="#d9534f"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/cancelOfflineOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/OkayOfflineOtp"
+            android:layout_alignBottom="@+id/OkayOfflineOtp"
+            android:layout_marginStart="53dp"
+            android:layout_toEndOf="@+id/OkayOfflineOtp"
+            android:text="Cancel"
+            android:textColor="#d9534f"
+            android:background="?android:attr/selectableItemBackground"/>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

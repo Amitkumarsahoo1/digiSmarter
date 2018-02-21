@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <script type="text/javascript" src="scripts/offline.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container" style="padding:0px">
+    <div class="col-xs-12" style="padding:0px">
+        <img src="images/dbslogo1.png" alt="Avatar" width="100%" height="100%" >
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+    <div class="col-xs-12" style="height:100px;margin-top:30px">
+        <div class="col-xs-12" style="text-align:center;color: #d9534f;">
+            <h2>DBS Offline Banking</h2>
+        </div>
+
+        <div class="col-xs-12">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <p> <span style="font-size:15px;"><b> Account Name</b>: Prateek </span></p>
+            <button class="btn btn-primary" onclick="fetchBalance()">Fetch Balance</button>
+            <div id="balance" class="col-xs-12" style="margin-top:10px; margin-bottom:10px; display:none">
+                Balance : INR 88,667
+            </div>
+            <div class="col-xs-12" style="margin-top:10px">
+                <button class="btn btn-primary" onclick="loadBanks()">Transfer Money</button>
+                <div class="col-xs-12" style="margin-top:10px;display:none" id="banks" >
+
+                    <div class="form-group ">
+                        <input name="group100" type="radio" id="radio100">
+                        <label for="radio100">Ashhad</label>
+                    </div>
+
+                    <div class="form-group ">
+                        <input name="group100" type="radio" id="radio1002">
+                        <label for="radio100">Amar</label>
+                    </div>
+                    <div class="form-group ">
+                        <input name="group100" type="radio" id="radio1003">
+                        <label for="radio100">Ankur</label>
+                    </div>
+
+<!--
+                    <div class="form-group input pass" id="banks" style="display:none" onclick="loadBranch()">
+                        <label for="exampleFormControlSelect1">Select Bank</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>ICICI Bank</option>
+                            <option>SBI</option>
+                            <option>HDFC</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group input pass" id="branch" style="display:none" onclick="showAccNumberInput()">
+                        <label for="exampleFormControlSelect2">Select Branch</label>
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>Madhapur Branch</option>
+                            <option>Gachibowli</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group input pass" id="accNumber" style="display:none" onclick="showSendButton()">
+                        <input type="number" class="form-control" id="accountNumber" aria-describedby="emailHelp" placeholder="Account Number">
+                    </div>
+
+                    -->
+
+                    <div class="form-group input pass" id="amount" style="display:none" onclick="showSendButton()">
+                        <input type="number" class="form-control" id="amountToSend" aria-describedby="emailHelp" placeholder="Amount to transfer">
+                    </div>
+
+                    <button class="btn btn-primary" onclick="transferMoney()" style="margin-top:10px; display:none" id="transfer">Transfer Money</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-2">
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300px">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/okayOfflineLogin"
+            android:layout_toEndOf="@+id/imageView2"
+            android:text="Network Unavailable! Login Offline?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/okayOfflineLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="21dp"
+            android:text="Okay"
+            android:textColor="#d9534f"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/cancelOfflineLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/okayOfflineLogin"
+            android:layout_alignBottom="@+id/okayOfflineLogin"
+            android:layout_marginStart="65dp"
+            android:layout_toEndOf="@+id/okayOfflineLogin"
+            android:text="Cancel"
+            android:textColor="#d9534f"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

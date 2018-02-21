@@ -1,0 +1,56 @@
+<!DOCType HTML>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/payment.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+</head>
+<body>
+
+<div class="col-xs-12 topnav" style="padding:10px">
+    <div class="col-xs-1" onclick="launchNextPage('landingpage')"><i class="fas fa-home" style="font-size:25px"></i></div>
+    <div class="col-xs-9"></div>
+    <div class="col-xs-1" onclick="launchNextPage('login')"><i class="fas fa-power-off" style="font-size:25px"></i></div>
+</div>
+
+<div>
+
+    <div class="container">
+        <div class="row" style="padding:0px">
+
+            <div class="col-xs-12" style="margin-left:15px">
+                <div id="logbox">
+                    <h2 style="text-align:center;color: #d9534f;">
+                        Make Payment
+                    </h2>
+                    <input id="name" type="text" placeholder="What's the seller name?"
+                           minlength="3" autofocus="autofocus" required="required"
+                           class="input pass" value="The Link@Sheraton Cafe"/>
+                    <input id="accountnumber" type="number" placeholder="Account Number"
+                           autofocus="autofocus" required="required"
+                           class="input pass" value="2313123"/>
+                    <input id="amount" type="number" placeholder="Enter Amount"
+                           required="required" class="input pass" value="1500.00"/>
+                    <div class="form-group expense-type" id="expense-type" style="display:block" onclick="showAccNumberInput()">
+                        <select class="form-control" id="category">
+                            <option>Food</option>
+                            <option>Travel</option>
+                            <option>Mobile Recharge</option>
+                        </select>
+                    </div>
+                    <button onclick="pay()" style="margin-top:10px;margin-bottom:10px" class="col-xs-offset-4 btn-large btn btn-danger">
+                        Pay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script defer src="./scripts/fontawesome.js"></script>
+<script defer src="./scripts/jquery.min.js"></script>
+<script defer src="./scripts/bootstrap.js"></script>
+<script defer src="./scripts/common.js"></script>
+<script type="text/javascript" src="scripts/login.js"></script>
+<script type="text/javascript" src="scripts/payment.js"></script>
+</body>
